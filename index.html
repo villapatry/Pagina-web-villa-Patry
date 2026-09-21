@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Villa Patry | Cabañas y apartaestudios frente al mar en Coveñas</title>
+<meta name="description" content="Cabañas en Coveñas frente al mar y con cocina dotada. Habitaciones, aparta estudios y apartamentos con acceso directo a la playa. Cotiza por WhatsApp.">
+<link rel="canonical" href="https://www.villapatry.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Villa Patry">
+<meta property="og:title" content="Villa Patry | Frente al mar en Coveñas">
+<meta property="og:description" content="Habitaciones, aparta estudios y apartamentos con acceso directo a la playa en Coveñas, Sucre.">
+<meta property="og:url" content="https://www.villapatry.com/">
+<meta property="og:image" content="https://www.villapatry.com/images/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#062a3a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Hotel","name":"Villa Patry","description":"Cabañas en Coveñas frente al mar y con cocina dotada.","url":"https://www.villapatry.com/","telephone":"+573015087564","email":"info@villapatry.com","address":{"@type":"PostalAddress","streetAddress":"Sector La Marta, Segunda Ensenada","addressLocality":"Coveñas","addressRegion":"Sucre","addressCountry":"CO"}}
+</script>
+
+<style>
+:root{
+  --navy:#062a3a; --sea:#0b5f73; --turq:#12b3ae; --foam:#f2f9f8;
+  --mango:#ffb020; --ink:#0a2530; --muted:#46626c; --line:#cfe1e1; --wa:#1faa59;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif;color:var(--ink);background:var(--foam)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,system-ui,sans-serif;line-height:1.04;letter-spacing:-.02em;text-wrap:balance}
+:focus-visible{outline:3px solid var(--sea);outline-offset:3px}
+.on-dark :focus-visible{outline-color:var(--mango)}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--ink);padding:.6rem 1rem;z-index:50}
+.skip:focus{left:0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font:600 1rem Figtree,sans-serif;text-decoration:none;border:2px solid transparent;border-radius:999px;padding:.85rem 1.5rem;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-mango{background:var(--mango);color:var(--navy)}
+.btn-mango:hover{background:#ffc04d}
+.btn-line{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-line:hover{background:#fff;color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--sea)}
+
+/* Header */
+.top{position:absolute;inset:0 0 auto;z-index:10;color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.25rem}
+.logo{text-decoration:none;font:800 1.6rem/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em}
+.logo small{display:block;font:500 .8rem/1.3 Figtree,sans-serif;letter-spacing:.02em;opacity:.85;margin-top:.15rem}
+.nav{display:flex;align-items:center;gap:1.75rem}
+.nav ul{display:flex;gap:1.75rem;list-style:none}
+.nav a.link{text-decoration:none;font-weight:500}
+.nav a.link:hover{text-decoration:underline;text-underline-offset:6px}
+.menu-btn{display:none;background:none;border:2px solid rgba(255,255,255,.7);color:#fff;border-radius:999px;padding:.45rem 1rem;font:600 .95rem Figtree,sans-serif;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;min-height:clamp(600px,94svh,900px);display:grid;align-items:end;color:#fff;background:var(--navy);overflow:hidden}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:settle 2.6s cubic-bezier(.2,.7,.2,1) both}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,42,58,.9) 0%,rgba(6,42,58,.4) 48%,rgba(6,42,58,.3) 100%)}
+.hero-copy{position:relative;z-index:1;padding-block:9rem 7rem}
+.hero h1{font-size:clamp(3rem,9.5vw,7.6rem);font-weight:800;line-height:.92;letter-spacing:-.045em}
+.hero h1 span{display:block;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 span:nth-child(2){animation-delay:.15s}
+.hero p{max-width:34ch;font-size:clamp(1.1rem,2.2vw,1.4rem);line-height:1.45;margin-top:1.5rem;animation:rise .9s .35s cubic-bezier(.2,.7,.2,1) both}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem;animation:rise .9s .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes settle{from{transform:scale(1.08)}to{transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+/* Quote bar */
+.quote{position:relative;z-index:2;margin-top:-3.5rem}
+.quote form{background:#fff;border-radius:16px;padding:1.25rem;display:grid;grid-template-columns:repeat(4,1fr) auto;gap:1rem;align-items:end;box-shadow:0 24px 50px -24px rgba(6,42,58,.5)}
+.quote label{display:block;font-size:.85rem;font-weight:600;color:var(--muted);margin-bottom:.3rem}
+.quote input,.quote select{width:100%;font:500 1rem Figtree,sans-serif;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:.7rem .8rem;min-height:3rem}
+.quote .err{grid-column:1/-1;color:#b3261e;font-weight:500;min-height:0}
+.quote .err:empty{display:none}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem 2.5rem;list-style:none;margin-top:1.75rem;color:var(--muted);font-weight:500}
+.facts li{border-left:3px solid var(--turq);padding-left:.75rem}
+
+/* Sections */
+.section{padding-block:clamp(4rem,9vw,7.5rem)}
+.section h2{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;max-width:16ch}
+.section .intro{max-width:52ch;color:var(--muted);margin-top:1rem;font-size:1.15rem}
+
+/* Rooms */
+.room{display:grid;grid-template-columns:7fr 5fr;gap:clamp(1.5rem,4vw,4rem);align-items:center;margin-top:clamp(3rem,7vw,5.5rem)}
+.room:nth-of-type(even) .gal{order:2}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.gal a{position:relative;display:block;overflow:hidden;border-radius:4px;background:#cfe3e3;aspect-ratio:1}
+.gal a:first-child{grid-column:1/-1;aspect-ratio:4/3}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal a[data-more]::after{content:attr(data-more) " fotos";position:absolute;inset:0;display:grid;place-items:center;background:rgba(6,42,58,.62);color:#fff;font:700 1.2rem 'Bricolage Grotesque',sans-serif}
+.room h3{font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:700}
+.room .lead{margin-top:.75rem;color:var(--muted)}
+.specs{margin-top:1.5rem}
+.specs div{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:.7rem 0;border-top:1px solid var(--line)}
+.specs div:last-child{border-bottom:1px solid var(--line)}
+.specs dt{font-weight:600;color:var(--sea)}
+.room .btn{margin-top:1.5rem}
+
+/* Gallery */
+.mosaic{columns:3 260px;column-gap:.5rem;margin-top:2.5rem}
+.mosaic a{display:block;margin-bottom:.5rem;border-radius:4px;overflow:hidden;background:#cfe3e3;break-inside:avoid}
+.mosaic img{width:100%;height:auto}
+
+/* Promo */
+.promo{background:var(--navy);color:#fff}
+.promo .intro{color:rgba(255,255,255,.8)}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);margin-top:3rem;border-top:1px solid rgba(255,255,255,.25)}
+.tier{padding:1.75rem 1.5rem 1.75rem 0}
+.tier + .tier{border-left:1px solid rgba(255,255,255,.25);padding-left:1.5rem}
+.tier .n{font:800 clamp(3.4rem,9vw,7rem)/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.05em;color:var(--mango)}
+.tier .d{font-size:1.2rem;font-weight:500;margin-top:.4rem}
+.terms{margin-top:2rem;padding-left:1.1rem;max-width:64ch;color:rgba(255,255,255,.82);font-size:.98rem}
+.terms li{margin-top:.35rem}
+.promo .btn{margin-top:2rem}
+
+/* Location */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.addr{font-size:1.25rem;margin-top:1.25rem;line-height:1.5}
+.split .btn{margin-top:1.5rem}
+.contact{list-style:none;border-top:1px solid var(--line)}
+.contact li{display:grid;grid-template-columns:8rem 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.contact b{color:var(--sea)}
+.contact a{font-weight:600;text-underline-offset:4px}
+
+/* How to get here */
+.how h3{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;margin-top:clamp(3rem,7vw,5rem)}
+.routes{display:grid;grid-template-columns:repeat(4,1fr);margin-top:1.25rem;border-top:1px solid var(--line)}
+.route{padding:1.5rem 1.5rem 1.5rem 0}
+.route + .route{border-left:1px solid var(--line);padding-left:1.5rem}
+.route .t{font:800 clamp(2rem,4.5vw,3.2rem)/1.05 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;color:var(--sea)}
+.route .f{margin-top:.4rem;font-weight:500}
+.route-note{margin-top:.5rem;color:var(--muted);max-width:62ch}
+.route-note a{font-weight:600;text-underline-offset:4px}
+
+/* Footer + FAB */
+footer{background:#041d29;color:rgba(255,255,255,.75);padding-block:2rem;font-size:.95rem}
+.fab{position:fixed;right:1rem;bottom:1rem;z-index:30;display:grid;place-items:center;width:3.6rem;height:3.6rem;border-radius:50%;background:var(--wa);color:#fff;box-shadow:0 10px 24px -8px rgba(0,0,0,.5)}
+.fab svg{width:1.9rem;height:1.9rem}
+
+/* Lightbox */
+dialog{border:0;background:transparent;max-width:100vw;max-height:100vh;width:100%;height:100%;padding:0;color:#fff}
+dialog::backdrop{background:rgba(4,29,41,.94)}
+dialog figure{height:100%;display:grid;grid-template-rows:1fr auto;place-items:center;padding:3.5rem 1rem 1rem}
+dialog img{max-width:92vw;max-height:78vh;object-fit:contain}
+dialog figcaption{padding-top:.75rem;font-size:.95rem;text-align:center}
+.lb-btn{position:absolute;background:rgba(255,255,255,.14);color:#fff;border:0;border-radius:999px;font:600 1rem Figtree,sans-serif;padding:.7rem 1.1rem;cursor:pointer}
+.lb-btn:hover{background:rgba(255,255,255,.28)}
+.lb-close{top:1rem;right:1rem}
+.lb-prev{left:1rem;top:50%}
+.lb-next{right:1rem;top:50%}
+
+/* Responsive */
+@media (max-width:900px){
+  .routes{grid-template-columns:1fr 1fr}
+  .route:nth-child(odd){border-left:0;padding-left:0}
+  .route:nth-child(n+3){border-top:1px solid var(--line)}
+  .quote form{grid-template-columns:1fr 1fr}
+  .quote form .btn{grid-column:1/-1}
+  .room{grid-template-columns:1fr}
+  .room:nth-of-type(even) .gal{order:0}
+  .split{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .menu-btn{display:inline-block}
+  .nav{position:absolute;right:1.25rem;top:4.6rem;flex-direction:column;align-items:stretch;gap:1rem;background:var(--navy);padding:1.25rem 1.5rem;border-radius:14px;min-width:14rem;display:none}
+  .nav.open{display:flex}
+  .nav ul{flex-direction:column;gap:.9rem}
+  .tiers,.routes{grid-template-columns:1fr}
+  .tier + .tier{border-left:0;border-top:1px solid rgba(255,255,255,.25);padding-left:0}
+  .route + .route{border-left:0;border-top:1px solid var(--line);padding-left:0}
+  .contact li{grid-template-columns:1fr;gap:.2rem}
+  .lb-prev,.lb-next{top:auto;bottom:1rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#alojamientos">Ir al contenido</a>
+
+<header class="top on-dark">
+  <div class="wrap">
+    <a class="logo" href="#">Villa Patry<small>Coveñas, Sucre</small></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul>
+        <li><a class="link" href="#alojamientos">Alojamientos</a></li>
+        <li><a class="link" href="#galeria">Galería</a></li>
+        <li><a class="link" href="#promociones">Promociones</a></li>
+        <li><a class="link" href="#ubicacion">Ubicación</a></li>
+      </ul>
+      <a class="btn btn-mango" data-wa="Hola Villa Patry, quiero cotizar una estadía." href="https://wa.me/573015087564">Cotizar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero on-dark">
+    <img class="bg" src="images/hero.jpg" alt="Playa con palmeras y ranchos de palma en la costa Caribe" fetchpriority="high">
+    <div class="wrap hero-copy">
+      <h1><span>Ven, disfruta</span><span>y descansa</span></h1>
+      <p>Habitaciones, aparta estudios y apartamentos frente al mar en Coveñas, Sucre.</p>
+      <div class="cta">
+        <a class="btn btn-mango" data-wa="Hola Villa Patry, quiero cotizar una estadía." href="https://wa.me/573015087564">Cotizar por WhatsApp</a>
+        <a class="btn btn-line" href="#alojamientos">Ver alojamientos</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="quote">
+      <form id="cotizar" novalidate>
+        <div><label for="llegada">Llegada</label><input id="llegada" type="date" required></div>
+        <div><label for="salida">Salida</label><input id="salida" type="date" required></div>
+        <div>
+          <label for="personas">Personas</label>
+          <select id="personas">
+            <option>1</option><option selected>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8</option><option value="9 o más">9 o más</option>
+          </select>
+        </div>
+        <div>
+          <label for="tipo">Alojamiento</label>
+          <select id="tipo">
+            <option>Sin preferencia</option>
+            <option>Habitación para parejas</option>
+            <option>Aparta estudio para 5 personas</option>
+            <option>Aparta estudio para 7 personas</option>
+            <option>Apartamento para 8 personas, 2 habitaciones</option>
+          </select>
+        </div>
+        <button class="btn btn-navy" type="submit">Cotizar por WhatsApp</button>
+        <p class="err" id="q-err" role="alert"></p>
+      </form>
+    </div>
+    <ul class="facts">
+      <li>Frente al mar</li>
+      <li>Acceso directo a la playa</li>
+      <li>Cocineta dotada en aparta estudios y apartamentos</li>
+      <li>Atención directa por WhatsApp</li>
+    </ul>
+  </div>
+
+  <section class="section" id="alojamientos">
+    <div class="wrap">
+      <h2>Elige dónde quedarte</h2>
+      <p class="intro">Cuatro opciones para parejas y familias, todas en Villa Patry, con acceso directo a la playa. Cotiza por WhatsApp y te confirmamos disponibilidad y precio.</p>
+
+      <article class="room">
+        <div class="gal">
+  <a class="lb" data-group="pareja" data-alt="Habitación para parejas con cama doble, escritorio y aire acondicionado" href="images/pareja-1.jpg"><img src="images/pareja-1.jpg" alt="Habitación para parejas con cama doble, escritorio y aire acondicionado" loading="lazy"></a>
+  <a class="lb" data-group="pareja" data-alt="Cama doble, closet y entrada al baño en la habitación para parejas" href="images/pareja-2.jpg"><img src="images/pareja-2.jpg" alt="Cama doble, closet y entrada al baño en la habitación para parejas" loading="lazy"></a>
+  <a class="lb" data-group="pareja" data-alt="Atardecer desde la terraza con vista al mar" href="images/terraza.jpg"><img src="images/terraza.jpg" alt="Atardecer desde la terraza con vista al mar" loading="lazy"></a>
+  <a class="lb" data-group="pareja" data-alt="Closet y escritorio de la habitación para parejas" data-more="+3" href="images/pareja-3.jpg"><img src="images/pareja-3.jpg" alt="Closet y escritorio de la habitación para parejas" loading="lazy"></a>
+  <a class="lb" data-group="pareja" data-alt="Cama doble con mesas de noche" href="images/pareja-4.jpg" hidden></a>
+  <a class="lb" data-group="pareja" data-alt="Baño con ducha y lavamanos" href="images/pareja-bano-1.jpg" hidden></a>
+  <a class="lb" data-group="pareja" data-alt="Lavamanos y espejo del baño" href="images/pareja-bano-2.jpg" hidden></a>
+</div>
+        <div>
+          <h3>Habitación para parejas</h3>
+          <p class="lead">Un espacio amplio, cómodo y a buen precio para dos, con terraza pública y vista parcial al mar.</p>
+          <dl class="specs">
+            <div><dt>Capacidad</dt><dd>Parejas</dd></div>
+            <div><dt>Ubicación</dt><dd>4.º piso, terraza pública con vista parcial al mar</dd></div>
+            <div><dt>Acceso</dt><dd>Por escaleras</dd></div>
+          </dl>
+          <a class="btn btn-navy" data-wa="Hola Villa Patry, me interesa la habitación para parejas. ¿Me cotizas?" href="https://wa.me/573015087564">Cotizar esta habitación</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="gal">
+  <a class="lb" data-group="e5" data-alt="Cama doble y camarote del aparta estudio para 5 personas" href="images/e5-1.jpg"><img src="images/e5-1.jpg" alt="Cama doble y camarote del aparta estudio para 5 personas" loading="lazy"></a>
+  <a class="lb" data-group="e5" data-alt="Baño con ducha del aparta estudio para 5 personas" href="images/e5-2.jpg"><img src="images/e5-2.jpg" alt="Baño con ducha del aparta estudio para 5 personas" loading="lazy"></a>
+  <a class="lb" data-group="e5" data-alt="Comedor con mesa de vidrio y ventilador" href="images/e5-3.jpg"><img src="images/e5-3.jpg" alt="Comedor con mesa de vidrio y ventilador" loading="lazy"></a>
+  <a class="lb" data-group="e5" data-alt="Habitación con cama doble y ventana" data-more="+1" href="images/e5-4.jpg"><img src="images/e5-4.jpg" alt="Habitación con cama doble y ventana" loading="lazy"></a>
+  <a class="lb" data-group="e5" data-alt="Comedor y camarote del aparta estudio" href="images/e5-5.jpg" hidden></a>
+</div>
+        <div>
+          <h3>Aparta estudio para 5 personas</h3>
+          <p class="lead">Para familias pequeñas que buscan comodidad a buen precio.</p>
+          <dl class="specs">
+            <div><dt>Capacidad</dt><dd>5 personas</dd></div>
+            <div><dt>Ubicación</dt><dd>3.er piso</dd></div>
+            <div><dt>Camas</dt><dd>Cama doble, camarote y cama auxiliar</dd></div>
+            <div><dt>Incluye</dt><dd>Cocineta dotada y aire acondicionado</dd></div>
+            <div><dt>Acceso</dt><dd>Por escaleras</dd></div>
+          </dl>
+          <a class="btn btn-navy" data-wa="Hola Villa Patry, me interesa el aparta estudio para 5 personas. ¿Me cotizas?" href="https://wa.me/573015087564">Cotizar este aparta estudio</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="gal">
+  <a class="lb" data-group="e7" data-alt="Cama doble y camarote del aparta estudio para 7 personas" href="images/e7-1.jpg"><img src="images/e7-1.jpg" alt="Cama doble y camarote del aparta estudio para 7 personas" loading="lazy"></a>
+  <a class="lb" data-group="e7" data-alt="Cocineta con estufa y lavaplatos" href="images/e7-cocineta.jpg"><img src="images/e7-cocineta.jpg" alt="Cocineta con estufa y lavaplatos" loading="lazy"></a>
+  <a class="lb" data-group="e7" data-alt="Cama doble y comedor" href="images/e7-3.jpg"><img src="images/e7-3.jpg" alt="Cama doble y comedor" loading="lazy"></a>
+  <a class="lb" data-group="e7" data-alt="Comedor y camarote" href="images/e7-4.jpg"><img src="images/e7-4.jpg" alt="Comedor y camarote" loading="lazy"></a>
+</div>
+        <div>
+          <h3>Aparta estudio para 7 personas</h3>
+          <p class="lead">Para familias grandes que buscan espacio, comodidad y buen precio.</p>
+          <dl class="specs">
+            <div><dt>Capacidad</dt><dd>7 personas</dd></div>
+            <div><dt>Ubicación</dt><dd>3.er piso</dd></div>
+            <div><dt>Camas</dt><dd>Cama doble, 2 camarotes y cama auxiliar</dd></div>
+            <div><dt>Incluye</dt><dd>Cocineta dotada, aire acondicionado y ventilador</dd></div>
+            <div><dt>Acceso</dt><dd>Por escaleras</dd></div>
+          </dl>
+          <a class="btn btn-navy" data-wa="Hola Villa Patry, me interesa el aparta estudio para 7 personas. ¿Me cotizas?" href="https://wa.me/573015087564">Cotizar este aparta estudio</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="gal">
+  <a class="lb" data-group="a2" data-alt="Sala y pasillo hacia las habitaciones del apartamento" href="images/a2-4.jpg"><img src="images/a2-4.jpg" alt="Sala y pasillo hacia las habitaciones del apartamento" loading="lazy"></a>
+  <a class="lb" data-group="a2" data-alt="Barra de cocina con banquetas" href="images/a2-1.jpg"><img src="images/a2-1.jpg" alt="Barra de cocina con banquetas" loading="lazy"></a>
+  <a class="lb" data-group="a2" data-alt="Pasillo con acceso a las habitaciones y camarote" href="images/a2-2.jpg"><img src="images/a2-2.jpg" alt="Pasillo con acceso a las habitaciones y camarote" loading="lazy"></a>
+  <a class="lb" data-group="a2" data-alt="Sala con televisor y comedor" href="images/a2-3.jpg"><img src="images/a2-3.jpg" alt="Sala con televisor y comedor" loading="lazy"></a>
+</div>
+        <div>
+          <h3>Apartamento para 8 personas, 2 habitaciones</h3>
+          <p class="lead">Para familias grandes que quieren más espacio y más privacidad.</p>
+          <dl class="specs">
+            <div><dt>Capacidad</dt><dd>8 personas</dd></div>
+            <div><dt>Ubicación</dt><dd>1.er o 2.º piso</dd></div>
+            <div><dt>Habitaciones</dt><dd>2, cada una con cama doble y camarote</dd></div>
+            <div><dt>Incluye</dt><dd>Sala, cocineta dotada, aire acondicionado y ventilador</dd></div>
+            <div><dt>Acceso</dt><dd>Por escaleras en el 2.º piso</dd></div>
+          </dl>
+          <a class="btn btn-navy" data-wa="Hola Villa Patry, me interesa el apartamento para 8 personas con 2 habitaciones. ¿Me cotizas?" href="https://wa.me/573015087564">Cotizar este apartamento</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="galeria" style="padding-top:0">
+    <div class="wrap">
+      <h2>La playa y la casa</h2>
+      <div class="mosaic">
+  <a class="lb" data-group="gal" data-alt="Atardecer sobre el mar en Coveñas" href="images/atardecer.jpg"><img src="images/atardecer.jpg" alt="Atardecer sobre el mar en Coveñas" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Fachada de Villa Patry" href="images/fachada.jpg"><img src="images/fachada.jpg" alt="Fachada de Villa Patry" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Atardecer con bañistas en el mar" href="images/atardecer-2.jpg"><img src="images/atardecer-2.jpg" alt="Atardecer con bañistas en el mar" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Ranchos con techo de palma frente a la playa" href="images/acceso-playa-1.jpg"><img src="images/acceso-playa-1.jpg" alt="Ranchos con techo de palma frente a la playa" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Sala con barra de cocina y balcón" href="images/sala.jpg"><img src="images/sala.jpg" alt="Sala con barra de cocina y balcón" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Playa de Coveñas" href="images/playa-panoramica.jpg"><img src="images/playa-panoramica.jpg" alt="Playa de Coveñas" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Camino de acceso al mar entre las torres" href="images/acceso-mar.jpg"><img src="images/acceso-mar.jpg" alt="Camino de acceso al mar entre las torres" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Atardecer desde un rancho de palma" href="images/atardecer-3.jpg"><img src="images/atardecer-3.jpg" alt="Atardecer desde un rancho de palma" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Torre de Villa Patry" href="images/torre.jpg"><img src="images/torre.jpg" alt="Torre de Villa Patry" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Ranchos de palma y zona de playa" href="images/acceso-playa-2.jpg"><img src="images/acceso-playa-2.jpg" alt="Ranchos de palma y zona de playa" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Habitación con camarote y cama doble" href="images/habitacion-camarote.jpg"><img src="images/habitacion-camarote.jpg" alt="Habitación con camarote y cama doble" loading="lazy"></a>
+  <a class="lb" data-group="gal" data-alt="Letrero de Villa Patry" href="images/villa.jpg"><img src="images/villa.jpg" alt="Letrero de Villa Patry" loading="lazy"></a>
+</div>
+    </div>
+  </section>
+
+  <section class="section promo on-dark" id="promociones">
+    <div class="wrap">
+      <h2>Temporada baja, mejor precio</h2>
+      <p class="intro">Cuantas más noches te quedes, más descuento.</p>
+      <div class="tiers">
+        <div class="tier"><div class="n">10%</div><div class="d">en estadías de 3 noches</div></div>
+        <div class="tier"><div class="n">15%</div><div class="d">en estadías de 4 noches</div></div>
+        <div class="tier"><div class="n">20%</div><div class="d">en estadías de 5 noches o más</div></div>
+      </div>
+      <ul class="terms">
+        <li>Aplica solo en temporada baja.</li>
+        <li>No aplica en festivos, Semana Santa, del 10 de junio al 22 de julio, receso de octubre ni desde el 17 de diciembre.</li>
+        <li>No es acumulable con otras promociones.</li>
+      </ul>
+      <a class="btn btn-mango" data-wa="Hola Villa Patry, quiero cotizar una estadía con el descuento de temporada baja." href="https://wa.me/573015087564">Cotizar con descuento</a>
+    </div>
+  </section>
+
+  <section class="section how" id="ubicacion">
+    <div class="wrap">
+    <div class="split">
+      <div>
+        <h2>Dónde estamos</h2>
+        <p class="addr">Sector La Marta, Segunda Ensenada<br>Coveñas, Sucre, Colombia</p>
+        <a class="btn btn-navy" href="https://www.google.com/maps/search/?api=1&query=Villa+Patry+Cove%C3%B1as+Sucre" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+      <ul class="contact">
+        <li><b>WhatsApp</b><a data-wa="Hola Villa Patry, tengo una pregunta." href="https://wa.me/573015087564">301 508 7564</a></li>
+        <li><b>Correo</b><a href="mailto:info@villapatry.com">info@villapatry.com</a></li>
+        <li><b>Facebook</b><a href="https://www.facebook.com/Caba%C3%B1as-Villa-Patry-Cove%C3%B1as-108700505888737/" target="_blank" rel="noopener">Cabañas Villa Patry Coveñas</a></li>
+      </ul>
+    </div>
+
+    <h3>Cómo llegar</h3>
+    <div class="routes">
+      <div class="route"><div class="t">20 min</div><div class="f">desde el aeropuerto de Tolú (Golfo de Morrosquillo)</div></div>
+      <div class="route"><div class="t">30 min a 1 h</div><div class="f">desde Sincelejo</div></div>
+      <div class="route"><div class="t">1 h 30 a 2 h</div><div class="f">desde Montería, con aeropuerto Los Garzones</div></div>
+      <div class="route"><div class="t">3 a 4 h</div><div class="f">desde Cartagena</div></div>
+    </div>
+    <p class="route-note">Tiempos aproximados por carretera. Villa Patry no ofrece servicio de transporte. Si necesitas indicaciones, <a data-wa="Hola Villa Patry, ¿me pueden dar indicaciones para llegar?" href="https://wa.me/573015087564">escríbenos por WhatsApp</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="on-dark">
+  <div class="wrap">© Villa Patry Coveñas. Sector La Marta, Segunda Ensenada, Coveñas, Sucre.</div>
+</footer>
+
+<a class="fab" data-wa="Hola Villa Patry, quiero cotizar una estadía." href="https://wa.me/573015087564" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8Z"/><path fill="currentColor" d="M9 7.6c-.3 0-.7.1-1 .5-.3.4-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.5 5.5 4.7 2.7 1 3.2.8 3.8.7.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.2-.3-.3-.7-.5l-1.9-.9c-.3-.1-.5-.1-.7.2l-.8 1c-.2.2-.4.2-.7.1-.4-.2-1.5-.6-2.8-1.7-1-.9-1.7-2-1.9-2.4-.2-.3 0-.5.2-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6L9.700 8c-.2-.4-.4-.4-.7-.4Z"/></svg>
+</a>
+
+<dialog id="lb" aria-label="Galería de fotos">
+  <button class="lb-btn lb-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Foto anterior">Anterior</button>
+  <button class="lb-btn lb-next" type="button" aria-label="Foto siguiente">Siguiente</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+</dialog>
+
+<script>
+(function () {
+  var NUM = '573015087564';
+  var wa = function (msg) { return 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(msg); };
+
+  /* Every element with data-wa opens WhatsApp with that message */
+  document.querySelectorAll('[data-wa]').forEach(function (el) {
+    el.href = wa(el.dataset.wa);
+    el.target = '_blank';
+    el.rel = 'noopener';
+  });
+
+  /* Mobile menu */
+  var btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) { nav.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); } });
+
+  /* Quote form */
+  var f = document.getElementById('cotizar'), a = document.getElementById('llegada'), s = document.getElementById('salida'), err = document.getElementById('q-err');
+  var today = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  a.min = today; s.min = today;
+  a.addEventListener('change', function () { s.min = a.value || today; });
+  var fmt = function (d) { var p = d.split('-'); return p[2] + '/' + p[1] + '/' + p[0]; };
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    err.textContent = '';
+    if (!a.value || !s.value) { err.textContent = 'Elige la fecha de llegada y la de salida.'; return; }
+    var nights = Math.round((new Date(s.value) - new Date(a.value)) / 86400000);
+    if (nights < 1) { err.textContent = 'La salida debe ser después de la llegada.'; return; }
+    var msg = 'Hola Villa Patry, quiero cotizar una estadía.\n' +
+      'Llegada: ' + fmt(a.value) + '\n' +
+      'Salida: ' + fmt(s.value) + ' (' + nights + (nights === 1 ? ' noche' : ' noches') + ')\n' +
+      'Personas: ' + document.getElementById('personas').value + '\n' +
+      'Alojamiento: ' + document.getElementById('tipo').value + '\n' +
+      '¿Tienen disponibilidad?';
+    window.open(wa(msg), '_blank', 'noopener');
+  });
+
+  /* Lightbox */
+  var lb = document.getElementById('lb'), img = lb.querySelector('img'), cap = lb.querySelector('figcaption');
+  var group = [], i = 0;
+  function show() {
+    var el = group[i];
+    delete img.dataset.fb;
+    img.src = el.getAttribute('href');
+    img.alt = el.dataset.alt || '';
+    cap.textContent = (i + 1) + ' de ' + group.length + '. ' + img.alt;
+  }
+  function step(n) { i = (i + n + group.length) % group.length; show(); }
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('a.lb');
+    if (!el) return;
+    e.preventDefault();
+    group = Array.prototype.slice.call(document.querySelectorAll('a.lb[data-group="' + el.dataset.group + '"]'));
+    i = group.indexOf(el);
+    show();
+    lb.showModal();
+    document.body.style.overflow = 'hidden';
+  });
+  lb.querySelector('.lb-close').addEventListener('click', function () { lb.close(); });
+  lb.querySelector('.lb-prev').addEventListener('click', function () { step(-1); });
+  lb.querySelector('.lb-next').addEventListener('click', function () { step(1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+  lb.addEventListener('close', function () { document.body.style.overflow = ''; });
+  lb.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') step(-1);
+    if (e.key === 'ArrowRight') step(1);
+  });
+})();
+</script>
+</body>
+</html>

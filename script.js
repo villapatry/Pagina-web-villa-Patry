@@ -19,6 +19,18 @@
     nav.addEventListener('click', function (e) { if (e.target.closest('a')) { nav.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); } });
   }
 
+  /* Close open dropdown <details> (nav "Alojamientos", Home CTA) on outside click or Escape */
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('details[open]').forEach(function (d) {
+      if (!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('details[open]').forEach(function (d) { d.removeAttribute('open'); });
+    }
+  });
+
   /* Quote form (Home only) */
   var f = document.getElementById('cotizar');
   if (f) {

@@ -43,9 +43,7 @@
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
   </div>
   <nav class="navrow" id="nav" aria-label="Principal">
-    <ul>
-      <li><a href="/" aria-current="page">Inicio</a></li><li><a href="/alojamientos/">Alojamientos</a></li><li><a href="/galeria/">Galería</a></li><li><a href="/promociones/">Promociones</a></li><li><a href="/contacto/">Contacto</a></li>
-    </ul>
+    <ul><li><a href="/" aria-current="page">Inicio</a></li><li class="has-dd"><details class="navdd"><summary>Alojamientos</summary><ul class="dd-menu"><li><a href="/habitacion-parejas/">Habitación para parejas</a></li><li><a href="/apartaestudio-5-personas/">Aparta estudio para 5 personas</a></li><li><a href="/apartaestudio-7-personas/">Aparta estudio para 7 personas</a></li><li><a href="/apartamento-2-habitaciones-covenas/">Apartamento de 2 habitaciones</a></li></ul></details></li><li><a href="/galeria/">Galería</a></li><li><a href="/promociones/">Promociones</a></li><li><a href="/contacto/">Contacto</a></li></ul>
   </nav>
 </header>
 <main id="main">
@@ -100,8 +98,47 @@
             <li>Aire acondicionado en todas las habitaciones</li>
             <li>Acceso directo a la playa</li>
           </ul>
-          <a class="btn btn-gold" href="/alojamientos/">Ver alojamientos</a>
+          <details class="cta-dd">
+            <summary class="btn btn-gold">Ver alojamientos</summary>
+            <ul class="dd-menu">
+              <li><a href="/habitacion-parejas/">Habitación para parejas</a></li>
+              <li><a href="/apartaestudio-5-personas/">Aparta estudio para 5 personas</a></li>
+              <li><a href="/apartaestudio-7-personas/">Aparta estudio para 7 personas</a></li>
+              <li><a href="/apartamento-2-habitaciones-covenas/">Apartamento de 2 habitaciones</a></li>
+            </ul>
+          </details>
         </div>
+      </div>
+
+      <div class="room-cards home-cards" id="alojamientos">
+        <a class="room-card" href="/habitacion-parejas/">
+          <span class="img"><img src="/pareja-1.jpg" alt="Habitación para parejas con cama doble, escritorio y aire acondicionado" loading="lazy"></span>
+          <span class="cap">Para parejas</span>
+          <h3>Habitación para parejas</h3>
+          <p class="lead">Un espacio amplio, cómodo y a buen precio para dos, con terraza pública y vista parcial al mar.</p>
+          <span class="see">Ver alojamiento</span>
+        </a>
+        <a class="room-card" href="/apartaestudio-5-personas/">
+          <span class="img"><img src="/e5-1.jpg" alt="Cama doble y camarote del aparta estudio para 5 personas" loading="lazy"></span>
+          <span class="cap">Hasta 5 personas</span>
+          <h3>Aparta estudio para 5 personas</h3>
+          <p class="lead">Para familias pequeñas que buscan comodidad a buen precio.</p>
+          <span class="see">Ver alojamiento</span>
+        </a>
+        <a class="room-card" href="/apartaestudio-7-personas/">
+          <span class="img"><img src="/e7-1.jpg" alt="Cama doble y camarote del aparta estudio para 7 personas" loading="lazy"></span>
+          <span class="cap">Hasta 7 personas</span>
+          <h3>Aparta estudio para 7 personas</h3>
+          <p class="lead">Para familias grandes que buscan espacio, comodidad y buen precio.</p>
+          <span class="see">Ver alojamiento</span>
+        </a>
+        <a class="room-card" href="/apartamento-2-habitaciones-covenas/">
+          <span class="img"><img src="/a2-4.jpg" alt="Sala y pasillo hacia las habitaciones del apartamento" loading="lazy"></span>
+          <span class="cap">Hasta 8 personas</span>
+          <h3>Apartamento de 2 habitaciones</h3>
+          <p class="lead">Para familias grandes que quieren más espacio y más privacidad.</p>
+          <span class="see">Ver alojamiento</span>
+        </a>
       </div>
 
       <div class="exp">

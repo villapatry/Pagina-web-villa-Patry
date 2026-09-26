@@ -41,6 +41,36 @@ h2{font-size:clamp(2.5rem,5.4vw,4.2rem)}
 .navrow a:hover{color:var(--gold-deep)}
 .menu-btn{display:none;justify-self:end;background:none;border:1.5px solid var(--ink);color:var(--ink);border-radius:4px;padding:.5rem 1rem;font:600 .95rem 'Hanken Grotesk',sans-serif;cursor:pointer}
 
+/* Nav dropdown (Alojamientos) */
+.navrow li{position:relative}
+.navrow details{display:inline-block}
+.navrow summary{cursor:pointer;font-weight:500;list-style:none}
+.navrow summary::-webkit-details-marker{display:none}
+.navrow summary::after{content:"";display:inline-block;margin-left:.4em;width:.4em;height:.4em;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-.15em) rotate(45deg);transition:transform .15s}
+.navrow details[open] summary::after{transform:translateY(.05em) rotate(-135deg)}
+.navrow summary:hover{color:var(--gold-deep)}
+.navrow li.dd-active summary{color:var(--gold-deep);font-weight:600}
+.navrow .dd-menu{list-style:none;margin:0;padding:0}
+.navrow details .dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:.6rem;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 14px 34px rgba(0,0,0,.14);min-width:250px;z-index:30;padding:.4rem 0}
+.navrow .dd-menu li{padding:0}
+.navrow .dd-menu a{display:block;padding:.65rem 1.2rem;font-weight:500;white-space:normal}
+.navrow .dd-menu a:hover{background:var(--sand);color:var(--gold-deep)}
+
+/* Home hero CTA dropdown */
+.cta-dd{position:relative;display:inline-block}
+.cta-dd summary{list-style:none;display:inline-flex}
+.cta-dd summary::-webkit-details-marker{display:none}
+.cta-dd summary::after{content:"";display:inline-block;margin-left:.55em;align-self:center;width:.45em;height:.45em;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg) translateY(-.1em)}
+.cta-dd[open] summary::after{transform:rotate(-135deg) translateY(.15em)}
+.cta-dd .dd-menu{position:absolute;top:calc(100% + .6rem);left:0;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 14px 34px rgba(0,0,0,.14);min-width:270px;z-index:30;list-style:none;margin:0;padding:.4rem 0}
+.cta-dd .dd-menu li{padding:0}
+.cta-dd .dd-menu a{display:block;padding:.7rem 1.2rem;font-weight:500;color:var(--ink);text-decoration:none}
+.cta-dd .dd-menu a:hover{background:var(--sand);color:var(--gold-deep)}
+
+@media (max-width:900px){
+  .navrow details .dd-menu{position:static;transform:none;box-shadow:none;border:none;background:none;margin-top:.4rem;padding-left:0;text-align:center}
+}
+
 /* Hero */
 .hero{position:relative;min-height:clamp(520px,80svh,780px);display:grid;place-items:center;text-align:center;color:#fff;background:var(--sand2);overflow:hidden}
 .hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:settle 2.4s cubic-bezier(.2,.7,.2,1) both}
@@ -211,12 +241,41 @@ dialog figcaption{padding-top:.75rem;font-size:.95rem;text-align:center}
 .other-rooms{margin-top:clamp(3rem,7vw,5.5rem);border-top:1px solid var(--line);padding-top:clamp(2rem,5vw,3rem)}
 .other-rooms h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
 .other-rooms .room-cards{grid-template-columns:repeat(3,1fr)}
+.home-cards{grid-template-columns:repeat(4,1fr);scroll-margin-top:2rem}
+.home-cards .lead{display:none}
 
+@media (max-width:1100px){
+  .home-cards{grid-template-columns:repeat(2,1fr)}
+}
 @media (max-width:900px){
-  .room-cards,.other-rooms .room-cards{grid-template-columns:1fr}
+  .room-cards,.other-rooms .room-cards,.home-cards{grid-template-columns:1fr}
   .room-detail-body{grid-template-columns:1fr}
 }
 @media (max-width:700px){
   .room-detail-gal{grid-template-columns:repeat(2,1fr)}
   .room-detail-gal a:first-child{grid-column:1/3;grid-row:auto;aspect-ratio:16/10}
+}
+
+/* Venta (property sale) page */
+.sale-features{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem 2rem;margin-top:1.5rem}
+.sale-features li{position:relative;padding-left:1.6rem;font-weight:500;color:var(--muted)}
+.sale-features li::before{content:"";position:absolute;left:0;top:.55em;width:.7rem;height:.7rem;border-radius:50%;background:var(--gold)}
+.floor-card{padding-block:1.75rem;border-top:1px solid var(--line)}
+.floor-card:last-child{border-bottom:1px solid var(--line)}
+.floor-card h3{font-size:clamp(1.5rem,2.6vw,1.9rem)}
+.floor-card .lead{color:var(--muted);margin-top:.5rem;max-width:70ch}
+.floor-card .medidas{margin-top:.5rem;font-weight:600;color:var(--gold-deep);font-size:.95rem}
+.sub-unit{margin-top:1rem;padding-left:1.25rem;border-left:2px solid var(--line)}
+.sub-unit + .sub-unit{margin-top:1.25rem}
+.sub-unit .who{font-weight:600;color:var(--gold-deep);font-size:.95rem}
+.price-band{text-align:center}
+.price-band .amount{font:400 clamp(2.6rem,7vw,5rem)/1 'Instrument Serif',Georgia,serif;color:var(--gold-deep)}
+.price-band .words{margin-top:.5rem;font-weight:500}
+.price-band .fine{margin-top:1.25rem;color:rgba(255,255,255,.82);max-width:60ch;margin-inline:auto}
+.price-band .btn{margin-top:2rem}
+.callout{margin-top:clamp(2.5rem,6vw,4rem);border-left:3px solid var(--gold);padding:1.25rem 1.5rem;background:var(--sand);border-radius:0 10px 10px 0}
+.callout p{color:var(--ink);font-size:1rem}
+
+@media (max-width:700px){
+  .sale-features{grid-template-columns:1fr}
 }

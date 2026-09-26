@@ -6,11 +6,10 @@ Villa Patry está ubicado en el Sector La Marta, Segunda Ensenada, Coveñas, Suc
 
 ## Páginas
 - Inicio: https://www.villapatry.com/
-- Alojamientos: https://www.villapatry.com/alojamientos/
-- Habitación para parejas: https://www.villapatry.com/alojamientos/habitacion-parejas/
-- Aparta estudio para 5 personas: https://www.villapatry.com/alojamientos/apartaestudio-5-personas/
-- Aparta estudio para 7 personas: https://www.villapatry.com/alojamientos/apartaestudio-7-personas/
-- Apartamento de 2 habitaciones (8 personas): https://www.villapatry.com/alojamientos/apartamento-2-habitaciones-covenas/
+- Habitación para parejas: https://www.villapatry.com/habitacion-parejas/
+- Aparta estudio para 5 personas: https://www.villapatry.com/apartaestudio-5-personas/
+- Aparta estudio para 7 personas: https://www.villapatry.com/apartaestudio-7-personas/
+- Apartamento de 2 habitaciones (8 personas): https://www.villapatry.com/apartamento-2-habitaciones-covenas/
 - Galería: https://www.villapatry.com/galeria/
 - Promociones: https://www.villapatry.com/promociones/
 - Contacto y cómo llegar: https://www.villapatry.com/contacto/
